@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        h1,
+        a,
+        p {
+            font-family: 'Heebo';
+            font-style: normal;
+            text-decoration: none;
+        }
+        .mousemove {
+            width: 50px;
+            height: 50px;
+            border: #FF6464 3px solid;
+            border-radius: 100%;
+            transform: translate(-45%, -45%);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg d-flex  justify-content-end">
+        <div class="container-fluid  justify-content-end">
+            <button class="navbar-toggler  justify-content-end" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon  justify-content-end"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav justify-content-end">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active " aria-current="page" href="works.html">Works</a>
+                    <a class="nav-link active " aria-current="page" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Mes fichas</h1>
+
+    </div>
+
+    <div class="mousemove position-absolute"></div>
+
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center">
+            <a href="" class="text-decoration-none" target="_blank">
+                <img src="./asset/facebook.png" width="30px" alt="">
+            </a>
+            <div class="" style="width: 2rem;"></div>
+            <a href="" class="text-decoration-none" target="_blank">
+                <img src="./asset/instagram.png" width="30px" alt="">
+            </a>
+            <div class="" style="width: 2rem;"></div>
+            <a href="" class="text-decoration-none" target="_blank">
+                <img src="./asset/X.png" width="30px" alt="">
+            </a>
+            <div class="" style="width: 2rem;"></div>
+            <a href="" class="text-decoration-none" target="_blank">
+                <img src="./asset/linkedin.png" width="30px" alt="">
+            </a>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+            <p class="">
+                Copyright ©2020 All rights reserved (Footer)
+            </p>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="mouse.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        h1,
+        a,
+        p {
+            font-family: 'Heebo';
+            font-style: normal;
+            text-decoration: none;
+        }
+
+        .avatar {
+            width: 20vw;
+            height: 20vw;
+        }
+
+        .reseau {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .button:focus::after {
+            background-color: white;
+        }
+
+        @media screen and (max-width: 600px) {
+            .ordre-test-end {
+                order: 2;
+            }
+
+            .ordre-test-start {
+                order: 1;
+            }
+
+            .john-petit {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+            }
+
+            .avatar {
+                width: 50vw;
+                height: 50vw;
+            }
+        }
+
+        @media screen and (max-width: 990px) {
+            .reseau {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg d-flex  justify-content-end">
+        <div class="container-fluid  justify-content-end">
+            <button class="navbar-toggler  justify-content-end" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon  justify-content-end"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav justify-content-end">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link active " style="color: #FF6464;" aria-current="page" href="#">Profil</a>
+                    <a class="nav-link active " aria-current="page" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mb-5" style="background-color: #EDF7FA;">
+        <div class="row p-3">
+            <div
+                class="col-md-6 order-md-1 order-sm-2 ordre-test-end text-md-start text-sm-center text-lg-start centretext">
+                <h1>Scroll, <br> pour découvrir mon profil</h1>
+                <p>
+                    Explore ce site pour découvrir mes compétences technique et découvrir mon profil !
+                </p>
+            </div>
+            <div class="col-md-6 order-md-2
+            d-sm-flex flex-sm-row-reverse justify-content-sm-center 
+            d-xs-flex flex-sm-row-reverse justify-content-sm-center 
+            order-sm-1 ordre-test-start
+            john-petit">
+                <img class="avatar" style="box-shadow: #FFFFFF -10px 10px 0px; border-radius: 100%;"
+                    src="./asset/john.png" alt="">
+            </div>
+
+        </div>
+        <a href="./asset/mycv.pdf" style="background-color: #FF6464; width: auto;" class="text-decoration-none
+             alert text-white 
+             py-2 rounded-0
+             d-md-inline
+             download
+             " download="sirine cv">
+            Download Resume
+        </a>
+    </div>
+
+
+
+
+    <div class="container">
+        <h2>Mon parcours informatique</h2>
+        <div id="carouselExample" class="carousel slide d-block d-sm-none">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row p-4 d-flex justify-content-center">
+                        <div class="card" style="width: 25rem;">
+                            <h1 class="text-center fs-1 mb-0" style="text-shadow: #FF6464 3px 1px 0px;">2020</h1>
+                            <hr>
+                            <div class="card-body">
+                                <p class="card-text">J'ai commencé des cours d'informatique avec Educ-Etic. J'ai fait la
+                                    connaissance d'un prof qui m'a aidé et avec qui je suis toujours en contact. Et j'ai
+                                    appris
+                                    le HTML et le CSS. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row p-4 d-flex justify-content-center">
+                        <div class="card" style="width: 25rem;">
+                            <h1 class="text-center fs-1 mb-0" style="text-shadow: #FF6464 3px 1px 0px;">2021</h1>
+                            <hr>
+                            <div class="card-body">
+                                <p class="card-text">J'ai créé mon propre site de streaming d'animé. Car je n'étais pas
+                                    satisfaites des sites comme VoirAnime, ADKami... A cause des pubs et des redirection
+                                    vers
+                                    des sites.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row p-4 d-flex justify-content-center">
+                        <div class="card" style="width: 25rem;">
+                            <h1 class="text-center fs-1 mb-0" style="text-shadow: #FF6464 3px 1px 0px;">2022</h1>
+                            <hr>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    J'ai fait une négociation inédite
+                                    avec l'école Hexagone. L'accord était qu'il m'accepte en école d'ingénieur, tout en
+                                    travaillant en même temps mon bac. Pendant 2 ans.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row p-4 d-flex justify-content-center">
+                        <div class="card" style="width: 25rem;">
+                            <h1 class="text-center fs-1 mb-0" style="text-shadow: #FF6464 3px 1px 0px;">2023</h1>
+                            <hr>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    En 2023, il y a eut mon stage de fin d'année. Ce fut ma première vrai expérience
+                                    professionel.
+                                    Qui m'a permis d'améliorer mes compétences en informatique. Je continue donc mon
+                                    double cursus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mb-3">
+        <div class="accordion d-none d-sm-block" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button focus-ring focus-ring-danger button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        2020
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        J'ai commencé des cours d'informatique avec Educ-Etic. J'ai fait la
+                        connaissance d'un prof qui m'a aidé et avec qui je suis toujours en contact. Et j'ai appris
+                        le HTML et le CSS.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed focus-ring focus-ring-danger button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        2021
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        J'ai créé mon propre site de streaming d'animé. Car je n'étais pas
+                        satisfaites des sites comme VoirAnime, ADKami... A cause des pubs et des redirection
+                        vers
+                        des sites.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed focus-ring focus-ring-danger button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        2022
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        J'ai fait une négociation inédite
+                        avec l'école Hexagone. L'accord était qu'il m'accepte en école d'ingénieur, tout en travaillant
+                        en même temps mon bac. Pendant 2 ans.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header ">
+                    <button class="accordion-button collapsed focus-ring focus-ring-danger button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        2023
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        En 2023, il y a eut mon stage de fin d'année. Ce fut ma première vrai expérience professionel.
+                        Qui m'a permis d'améliorer mes compétences en informatique. Je continue donc mon double cursus.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class=""></div>
+                <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped" style="width: 10%"></div>
+                </div>
+                <br>
+                <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-success" style="width: 25%"></div>
+                </div>
+                <br>
+                <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-info" style="width: 50%"></div>
+                </div>
+                <br>
+                <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-warning" style="width: 75%"></div>
+                </div>
+                <br>
+                <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped bg-danger" style="width: 100%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-center">
+            <a href="" class="text-decoration-none" target="_blank">
+                <img src="./asset/facebook.png" width="30px" alt="">
+            </a>
+            <div class="" style="width: 2rem;"></div>
+            <a href="" class="text-decoration-none" target="_blank">
+                <img src="./asset/instagram.png" width="30px" alt="">
+            </a>
+            <div class="" style="width: 2rem;"></div>
+            <a href="" class="text-decoration-none" target="_blank">
+                <img src="./asset/X.png" width="30px" alt="">
+            </a>
+            <div class="" style="width: 2rem;"></div>
+            <a href="" class="text-decoration-none" target="_blank">
+                <img src="./asset/linkedin.png" width="30px" alt="">
+            </a>
+        </div>
+        <div class="d-flex justify-content-center my-3">
+            <p class="">
+                Copyright ©2020 All rights reserved (Footer)
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
